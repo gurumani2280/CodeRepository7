@@ -1,0 +1,69 @@
+identifiying element?
+driver.findElement(By.name("username"));
+
+list all locator in selenium?/or list eight methods of By class?
+id
+name
+cssSelector
+xPath
+linkText
+PartialLinkText
+className
+tagName
+
+
+<input type="text" name="username" placeholder="username">
+
+tagName = input, 
+Attribute    value
+type         text
+name         username
+placeholder  username
+
+<input type="password" name="password" placeholder="password">
+
+tagName = input, 
+Attribute    value
+type         password
+name         password
+placeholder  password
+
+<input id="lastname" type="text" name="lastName">
+
+tagName = input, 
+Attribute    value
+id           lastname
+type         text
+name         lastName
+
+
+<textarea class="gLFyf" jsaction="paste:puy29d;" id="APjFqb" maxlength="2048" name="q" rows="1" aria-activedescendant="" aria-autocomplete="both" aria-controls="Alh6id" aria-expanded="false" aria-haspopup="both" aria-owns="Alh6id" autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="" role="combobox" spellcheck="false" title="Search" type="search" value="" aria-label="Search" data-ved="0ahUKEwjn_Z6gmqCAAxXY_GEKHQsMAioQ39UDCAQ">
+</textarea>
+
+tagName = textarea
+Attribute    value
+class        gLFyf
+name=		"q" 
+id           lastname
+type         text
+name         lastName
+
+<input class="gNO89b" value="Google Search" aria-label="Google Search" name="btnK" role="button" tabindex="0" type="submit" data-ved="0ahUKEwjn_Z6gmqCAAxXY_GEKHQsMAioQ4dUDCBE">
+tagName = input
+Attribute    value
+class        gNO89b
+name=		"btnK" 
+id           lastname
+type         text
+name         lastName
+
+WebElement searchBox = driver.findElement(By.name("q"));
+searchBox.sendKeys("")
+
+WebElement searchButton = driver.findElement(By.name("btnK"));
+searchBox.click();
+
+
+
+WebElement searchBox = driver.findElement(By.name("q"));
+searchBox.sendKeys("selenium", Keys.Enter)
